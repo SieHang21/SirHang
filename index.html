@@ -1,0 +1,300 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashruzzaman | High-Conversion Small Business Websites</title>
+    <meta name="description" content="Mashruzzaman - Dhaka, Bangladesh. Remote international work. I build small business websites that convert visitors to customers. Landing pages, SEO, social pages from $199.">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="dns-prefetch" href="https://unsplash.com">
+    <!-- PWA ready with minimal manifest -->
+</head>
+<body data-theme="dark">
+    <!-- Skip link for accessibility WCAG 2.1 AA [web:13] -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- 1. LOADING SCREEN - Custom loader + name reveal -->
+    <div id="loader" class="loader">
+        <div class="loader-circle"></div>
+        <h1 class="loader-name">Mashruzzaman</h1>
+    </div>
+
+    <!-- 2. GLASS NAVBAR - Glassmorphism backdrop-filter: blur(20px) [web:1][web:2][web:3] -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Home">
+                <span class="logo-text">MZ</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" data-scroll="home">Home</a></li>
+                <li><a href="#about" data-scroll="about">About</a></li>
+                <li><a href="#services" data-scroll="services">Services</a></li>
+                <li><a href="#portfolio" data-scroll="portfolio">Portfolio</a></li>
+                <li><a href="#contact" data-scroll="contact">Contact</a></li>
+            </ul>
+
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">🌙</button>
+                <a href="#contact" class="cta-button hire-me" data-scroll="contact" aria-label="Hire Me">Hire Me</a>
+                <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION - 100vh, particle canvas, typing effect, stats counter, magnetic CTAs -->
+    <section id="home" class="hero" role="banner">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title glitch-title" data-text="I build small business websites that convert">
+                <span class="glitch-text">I build small business websites that convert</span>
+            </h1>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span id="clients-stat" data-target="127">0</span>
+                    <span>+ Clients</span>
+                </div>
+                <div class="stat">
+                    <span id="projects-stat" data-target="89">0</span>
+                    <span>+ Projects</span>
+                </div>
+                <div class="stat">
+                    <span id="conversion-stat" data-target="247">0</span>
+                    <span>% Avg Conversion</span>
+                </div>
+            </div>
+            <div class="hero-ctas">
+                <a href="#contact" class="magnetic-cta primary" data-scroll="contact">Get Quote</a>
+                <a href="https://wa.me/8801628366040" class="magnetic-cta secondary" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- 4. ABOUT SECTION - Profile, animated skill bars [web:23], tech stack grid -->
+        <section id="about" class="about section">
+            <h2 class="section-title">About Mashruzzaman</h2>
+            <div class="about-grid">
+                <div class="profile-card">
+                    <div class="profile-image" role="img" aria-label="Profile photo of Mashruzzaman">
+                                <img src="images/profile.jpeg" 
+                                    alt="Mashruzzaman - Web Developer, Bangladesh" 
+                                    width="160" height="160" loading="lazy">
+                    </div>
+                    <h3>Web Developer</h3>
+                    <p>Dhaka, Bangladesh <br> Remote International Work</p>
+                    <p>Specializing in high-conversion small business websites. Clean code, fast loading, maximum ROI.</p>
+                </div>
+                <div class="skills-section">
+                    <h3>Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-label">HTML5</span>
+                            <div class="skill-progress" data-width="97%"></div>
+                            <span class="skill-percent">97%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-label">CSS3</span>
+                            <div class="skill-progress" data-width="94%"></div>
+                            <span class="skill-percent">94%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-label">JavaScript</span>
+                            <div class="skill-progress" data-width="89%"></div>
+                            <span class="skill-percent">89%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-label">WordPress</span>
+                            <div class="skill-progress" data-width="82%"></div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-grid">
+                        <span>HTML/CSS/JS</span>
+                        <span>WordPress</span>
+                        <span>Figma</span>
+                        <span>Google SEO</span>
+                        <span>GTmetrix</span>
+                        <span>WebP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SERVICES - 4 hover-3D cards with perspective/rotateY [web:7] -->
+        <section id="services" class="services section">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Landing Pages + Forms</h3>
+                            <p class="price">$299 starter</p>
+                            <ul>
+                                <li>Hero sections</li>
+                                <li>Contact forms</li>
+                                <li>Galleries</li>
+                            </ul>
+                        </div>
+                        <div class="card-back">
+                            <h3>Perfect for startups</h3>
+                            <p>Convert visitors to leads in 7 days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Google Business + Local SEO</h3>
+                            <p class="price">$249 setup</p>
+                            <ul>
+                                <li>Maps integration</li>
+                                <li>Review systems</li>
+                                <li>Local rankings</li>
+                            </ul>
+                        </div>
+                        <div class="card-back">
+                            <h3>Local domination</h3>
+                            <p>Top 3 Google Maps guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Social Landing Pages</h3>
+                            <p class="price">$199</p>
+                            <ul>
+                                <li>Bio links</li>
+                                <li>Bookings</li>
+                                <li>Social feeds</li>
+                            </ul>
+                        </div>
+                        <div class="card-back">
+                            <h3>Social first</h3>
+                            <p>Instagram/TikTok ready</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Site Speed + Maintenance</h3>
+                            <p class="price">$49/month</p>
+                            <ul>
+                                <li>Optimization</li>
+                                <li>Updates</li>
+                                <li>Monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="card-back">
+                            <h3>Always fast</h3>
+                            <p>99.9% uptime + Lighthouse 90+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PORTFOLIO - Infinite masonry + filters -->
+        <section id="portfolio" class="portfolio section">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="landing">Landing</button>
+                <button class="filter-btn" data-filter="seo">SEO</button>
+                <button class="filter-btn" data-filter="social">Social</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid"></div>
+            <button id="load-more" class="load-more" style="display:none;">Load More</button>
+        </div>
+
+
+        <!-- 7. TESTIMONIALS - 3-card physics carousel [web:10] -->
+        <section id="testimonials" class="testimonials section">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="testimonial-card">
+                        <blockquote>"Mashruzzaman delivered our landing page in 48 hours. 300% ROI in first month!"</blockquote>
+                        <cite>- TastyBites Owner</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>"Top 3 Google ranking in 2 weeks. Best investment ever."</blockquote>
+                        <cite>- CityClinic Manager</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>"Social page converted 47% visitors to bookings. Amazing!"</blockquote>
+                        <cite>- EliteTutors Founder</cite>
+                    </div>
+                </div>
+                <button class="carousel-prev" aria-label="Previous testimonial">‹</button>
+                <button class="carousel-next" aria-label="Next testimonial">›</button>
+            </div>
+        </section>
+
+        <!-- 8. CONTACT - Floating inputs, live validation, WhatsApp [web:21] -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Get Your Quote</h2>
+            <form id="contact-form" novalidate aria-label="Contact form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required minlength="2" aria-describedby="name-error">
+                    <label for="name">Full Name</label>
+                    <span id="name-error" class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <label for="email">Email</label>
+                    <span id="email-error" class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required pattern="[+]?[0-9\s\-\(\)]{10,}" aria-describedby="phone-error">
+                    <label for="phone">Phone/WhatsApp</label>
+                    <span id="phone-error" class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required minlength="10" rows="5" aria-describedby="message-error"></textarea>
+                    <label for="message">Project Details</label>
+                    <span id="message-error" class="error" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="quick-links">
+                <a href="mailto:mashruzzamansaad@gmail.com" class="quick-link">📧 Email</a>
+                <a href="https://wa.me/8801628366040" class="quick-link">📱 WhatsApp</a>
+                <a href="https://www.linkedin.com/in/mashruzzaman/" class="quick-link">💼 LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Mashruzzaman. Made in Bangladesh 🇧🇩 with ❤️</p>
+            <canvas id="footer-canvas" aria-hidden="true"></canvas>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+    <!-- Case study modal -->
+    <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">×</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
